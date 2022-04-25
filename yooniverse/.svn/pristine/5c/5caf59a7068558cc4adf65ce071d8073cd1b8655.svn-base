@@ -1,0 +1,943 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+
+body{
+    background:#04131e;
+    
+}
+
+/* 헤더 */
+
+#headerDiv{
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+#headerRocket{
+    position: absolute;
+    width: 100px;
+    transform: rotate(-50deg);
+    top:10px;
+    right:200px;
+}
+#headerEarth{
+    position: absolute;
+    top:-100px;
+    left:300px;
+    width: 280px;
+}
+#headerTosung{
+    position: absolute;
+    width: 100px;
+    top:100px;
+    left:50px;
+}
+#headerUfo{
+    position: absolute;
+    width: 180px;
+    top:60px;
+    left: calc(50% - 90px);
+}
+#headerMoon{
+    position: absolute;
+    width: 300px;
+    bottom:-160px;
+    left: 100px;
+}
+#headerJupiter{
+    position: absolute;
+    width: 180px;
+    right: -70px;
+    top:90px;
+}
+
+
+/* 인덱스 */
+
+
+.sec1{
+    position: relative;
+    width: 100%;
+    background-image: url(../img/space_stars_static.png);
+}
+
+
+.pin-up{
+    position: relative;
+    overflow: hidden;
+    height: 986px;
+    margin: 0 auto;
+}
+
+
+.pin-up img#bg{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.pin-up img#rocket{
+    position: absolute;
+    top:15rem;
+    right:10rem;
+    width: 8%;
+    height: 15%;
+    min-width: 95px;
+    min-height: 120px;
+    transform:rotate(-45deg);
+}
+.pin-up img#earth{
+    position: absolute;
+    top:2rem;
+    left:3rem;
+    width: 20%;
+    height: 15%;
+    min-width: 295px;
+    min-height: 270px;
+    z-index: 2;
+}
+
+.pin-up img#tosung{
+    position: absolute;
+    top:13rem;
+    right:2rem;
+    width: 30%;
+    height: 40%;
+    min-height: 247px;
+    min-width: 400px;
+    
+    z-index: 2;
+}
+
+.pin-up img#ufo{
+    position: absolute;
+    bottom: 3rem;
+    left: -17rem;
+    width: 25%;
+    height: 28%;
+    min-height: 205px;
+    min-width: 184px;
+    z-index: 1;
+    transform: scale(0.5);
+}
+
+.pin-up img#moon{
+    position: absolute;
+    bottom:-22rem;
+    left:calc( 50% - 20rem);
+    z-index: 10;
+}
+
+.pin-up #title{
+    position: absolute;
+    bottom: -200px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 6em;
+    opacity: 0;
+    z-index: 9;
+    font-family: 'Poppins',sans-serif;
+    
+}
+
+.sec2::before{
+    content: '';
+    position: absolute;
+    top:-35vh;
+    left: 0;
+    height: 35vh;
+    background: linear-gradient(to top,#04131e,transparent);
+    z-index: 800;
+}
+
+.sec2{
+    position: relative;
+    width:100%;
+    background-image: url(../img/space_stars_static.png);
+}
+
+.fixed-width
+{
+    height: 140rem;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+#road-path{
+    position: absolute;
+    top:0;
+	left:550px;
+    width: 40%;
+    height:88%;
+}
+
+
+#road-path-target {
+    stroke-width: 3;
+    /* stroke: #9a8f4d; */
+}
+
+#scroll-mong{
+    position: absolute;
+    width: 15%;
+    max-width: 300px;
+    z-index:10;
+}
+
+
+#born{
+    position: absolute;
+    color:#fff;
+    top:815px;
+    left:170px;
+    font-size: 40px;
+    text-align: center;
+    line-height: 30px;
+}
+
+#born span{
+    font-size: 20px;
+}
+
+#cake{
+    position: absolute;
+    top:595px;
+    left:110px;
+    width: 220px;
+    z-index: 3;
+}
+
+#confetti{
+    position: absolute;
+    width: 250px;
+    top:575px;
+    left:100px;
+    z-index: 2;
+    opacity: 0;
+}
+#family{
+    position: absolute;
+    top:900px;
+    right:160px;
+    width: 310px;
+    height:310px;
+    color: #fff;
+    overflow: hidden;
+    text-align: center;
+}
+
+#family p{
+    position: absolute;
+    font-size: 20px;
+    white-space: pre;
+    top:10px;
+    left: 310px;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+#house{
+    position: absolute;
+    width: 200px;
+    z-index: 3;
+    top:50px;
+    left:55px;
+}
+
+#enfp{
+    position: absolute;
+    top:1300px;
+    left:115px;
+    width: 215px;
+    z-index: 3;
+}
+
+#aura{
+    position: absolute;
+    top:1350px;
+    left:155px;
+    width: 110px;
+    z-index: 2;
+}
+
+#personality{
+    position: absolute;
+    top:1500px;
+    left:133px;
+    color: #fff;
+    font-size: 25px;
+    z-index: 4;
+    line-height: 30px;
+    text-align: center;
+}
+
+#grad{
+    position: absolute;
+    top:1790px;
+    right:140px;
+    color: #fff;
+    font-size: 20px;
+    z-index: 4;
+    line-height: 30px;
+    text-align: center;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+#school{
+    position: absolute;
+    top:1600px;
+    right:150px;
+    width: 190px;
+    z-index: 3;
+}
+
+#finally{
+    position: absolute;
+    color:#fff;
+    font-size: 40px;
+    top:2130px;
+    left: calc(50% - 116.7px);
+    z-index: 11;
+}
+
+
+.sec3{
+    position: relative;
+    background-image: url(../img/space_stars_static.png);
+}
+
+
+.study{
+    position: relative;
+    overflow: hidden;
+    height: 5600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#glow{
+    position: absolute;
+    width: 1800px;
+    z-index: 1;
+    top:-15px;
+    left: calc(50% - 900px);
+}
+#glow2{
+    position: absolute;
+    top:580px;
+    left: calc(50% - 300px);
+    width: 620px;
+    z-index: 2;
+    opacity: 0.3;
+}
+
+#istarted{
+    font-size: 50px;
+    color: #fff;
+    position: absolute;
+    top: 250px;
+    left: calc(50% - 102.7px);
+    opacity: 0;
+}
+
+#programming{
+    position: absolute;
+    color: #fff;
+    font-size:50px;
+    top: 320px;
+    left: calc(50% - 285.5px);
+    opacity: 0;
+}
+
+#laptop{
+    position: absolute;
+    top: 400px;
+    left: calc(50% - 200px);
+    width: 400px;
+    opacity: 0;
+    z-index: 5;
+}
+#guide{
+    position: absolute;
+    opacity: 0;
+    z-index: 6;
+    width: 10px;
+    left: calc(50%);
+    top:780px;
+}
+
+#intro{
+    position: absolute;
+    text-align: center;
+    font-size: 25px;
+    top:1200px;
+    left:calc(50% + 125px);
+    color: #fff;
+    opacity: 0;
+}
+
+#content1,#content2,#content3,#content4{
+    position: absolute;
+    width: 25%;
+    max-width: 300px;
+    text-align: center;
+    color:#fff;
+    font-size: 25px;
+    overflow: hidden;
+    opacity: 0;
+
+}
+#content1{
+    top:1850px;
+    left:160px;
+}
+
+#content2{
+    top:2750px;
+    right:160px;
+}
+
+#content3{
+    top:3650px;
+    left:160px;
+}
+
+#content4{
+    top:4550px;
+    right:160px;
+}
+
+#content1 div,#content2 div,#content3 div,#content4 div{
+	width:250px;
+	height:250px;
+	overflow: hidden;
+	margin:0 auto;
+}
+
+#content1 img,#content2 img,#content3 img,#content4 img{
+    width:250px;
+    height: 250px;
+}
+
+#content1 p,#content2 p,#content3 p,#content4 p{
+    width:250px;
+    height:30px;
+    white-space: pre-wrap;
+    overflow: hidden;
+    margin:10px auto;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+#content1 p:last-child,#content2 p:last-child,#content3 p:last-child,#content4 p:last-child{
+    font-size: 20px;
+    margin-top: 7px;
+    height:55px;
+}
+
+#content1:hover img,#content2:hover img,#content3:hover img,#content4:hover img{
+    transform:scale(1.1);
+    transition: 0.3s;
+}
+
+
+#earth2{
+    position: absolute;
+    width:1000px;
+    top:5150px;
+    left:calc(50% - 470px);
+    z-index: 5;
+}
+
+.sec4::before {
+    content: '';
+    position: absolute;
+    top:-15vh;
+    left: 0;
+    height: 15vh;
+    background: linear-gradient(to top,#04131e,transparent);
+    z-index: 800;
+}
+
+.sec4{
+    position: relative;
+    overflow: hidden;
+    height:150px;
+    text-align: center;
+}
+
+.sec4 p{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 65px;
+    color: #fff;
+}
+
+.navbar{
+    z-index: 1000;
+}
+
+/* 로그인,회원가입 */
+.main{
+    position: relative;
+    width:100%;
+    background-image: url(../img/space_stars_static.png);
+    padding-top: 130px;
+}
+
+.login
+{
+    height: 580px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.join,.findId,.findPwd
+{
+    height: 850px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.login h2,.join h2,.board h2,.write h2,.detail h2,.gallery h2,.findId h2,.findPwd h2{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+.login form,.join form,.findId form,.findPwd form{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.form-check{
+    float: right;
+}
+
+#footerDiv{
+    position: relative;
+    height:150px;
+    overflow: hidden;
+    text-align: center;
+}
+
+#footerDiv p{
+    font-size: 20px;
+    margin-top:65px;
+}
+
+#loginlist{
+    width: 350px;
+    margin:25px auto;
+}
+
+#loginlist a:nth-child(n+1){
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+
+.join button:last-child{
+    margin-left: 10px;
+}
+
+.board
+{
+    height: 800px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.board table{
+    position: relative;
+    width:1000px;
+    margin: 0 auto;
+    z-index: 100;
+}
+
+.board table th,td{
+    text-align: center;
+}
+
+.board table td:nth-child(5n+1){
+    width:105px;
+}
+.board table td:nth-child(5n+2){
+    width:495px;
+}
+.board table td:nth-child(5n+3){
+    width:153px;
+}
+.board table td:nth-child(5n+4){
+    width:134px;
+}
+.board table td:nth-child(5n+5){
+    width:113px;
+}
+
+#boardSat{
+    position: absolute;
+    width:300px;
+    top:-40px;
+    right:30px;
+}
+
+.board button{
+    position: relative;
+    margin-top: 24px;
+    left: calc(50% + 420px);
+}
+
+.pageDiv{
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.write
+{
+    display:table;
+    position: relative;
+    margin: 0 auto;
+}
+
+.detail
+{
+    position: relative;
+    height: table;
+    margin: 0 auto;
+}
+
+.write form,.detail form{
+    width:750px;
+    margin: 0 auto;
+}
+
+.write form textarea{
+    resize: none;
+}
+
+.formBtnDiv,.detailBtnDiv{
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.formBtnDiv button:last-child,.detailBtnDiv button:last-child{
+    margin-left: 10px;
+}
+
+#detail{
+    width:750px;
+    margin: 0 auto;
+}
+
+#detail .my-2{
+    padding:0 6px;
+}
+
+#detail .drow1 p,#detail .drow1 h4{
+    display: inline-block;
+    margin:0;
+}
+
+#detail .drow1 p{
+    float: right;
+}
+
+#detail .drow1 p:last-child{
+    margin-right: 14px;
+}
+
+#detail .drow3 p{
+    width:738px;
+    height:400px;
+    white-space: pre-wrap;
+    overflow-y: scroll;
+}
+
+#detail .drow2 a{
+    text-decoration: none;
+    color:#f8f7dd;
+    padding: 6px 25px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin: 20px 0 0 10px; 
+}
+
+#hearts{
+    width: 40px;
+    height: 40px;
+    padding:0px;
+    position: relative;
+    overflow: hidden;
+    margin-top:5px ;
+}
+
+#hearts img{
+    width: 40px;
+    height: 40px;
+}
+
+#like{
+    position: relative;
+}
+
+#hearts a{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+
+#detail .drow4 div,#detail .drow4 p{
+    display: inline-block;
+}
+
+#detail .drow4 p{
+    position: absolute;
+    width:52px;
+    height: 24px;
+    top: 13px;
+    margin-left: 14px;
+}
+
+#detail .drow4{
+    height: 50px;
+    position: relative;
+}
+
+.gallery
+{
+    height: 1000px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.gpost{
+    display:inline-block;
+    margin: 20px 25px;
+    width: 170px;
+    height: 224px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.gpost a{
+	text-decoration:none;
+}
+
+.imgcontainer{
+    width: 170px;
+    height: 170px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.imgcontainer img{
+    width:170px;
+    height:170px;
+    position: absolute;
+}
+
+.imgcontainer img:nth-child(2n){
+    position: relative;
+    opacity: 0;
+}
+
+.gpost:hover .imgcontainer img:nth-child(2n){
+    transition-duration:0.5s;
+    opacity: 1;
+}
+
+.stype1::-webkit-scrollbar{
+    width: 6px;
+}
+
+/* 스크롤바 막대 설정*/
+.stype1::-webkit-scrollbar-thumb{
+    height: 17%;
+    background-color: rgba(255,255,255,1);
+    border-radius: 10px;    
+}
+
+/* 스크롤바 뒷 배경 설정*/
+.stype1::-webkit-scrollbar-track{
+    background-color: rgba(0,0,0,0);
+}
+
+#rpMf,#rpDt,#rpCancel,#rpMDone{
+	border-radius:15px;
+}
+
+#mfContent{
+	resize:none;
+}
+
+#mailSend{
+	margin-left:9px;
+}
+
+.galdetail{
+    width:1000px;
+    margin:0 auto;
+}
+
+#imgSection{
+    position: relative;
+    width:550px;
+    height:700px;
+    float: left;
+
+
+}
+
+#replySection{
+    float:right;
+    width:430px;
+    height:700px;
+    position: relative;
+}
+
+#imgNav{
+    width: 470px;
+    position: absolute;
+    bottom:15px;
+    left:-140px;
+}
+
+#showImg{
+    width:360px;
+    position: absolute;
+    top:30px;
+    margin:0 auto;
+    left:calc(50% - 180px);
+}
+
+#showImg img{
+    width: 360px;
+    vertical-align: center;
+}
+#imgList1,#imgList2{
+    position: absolute;
+    width:60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius:50%;
+    z-index: 3;
+}
+
+#pin1,#pin2{
+    position:absolute;
+    width: 40px;
+    z-index: 2;
+}
+
+#pin1{
+    top:360px;
+    left:0px;
+}
+
+#pin2{
+    top:500px;
+    left:110px;
+}
+
+
+#imgList1{
+    top:290px;
+    left:-10px;
+}
+
+#imgList2{
+    top:430px;
+    left:100px;
+}
+
+#detailCon{
+    width: 430px;
+    position: absolute;
+    top:30px;
+}
+
+#detailCon h3{
+    width: 430px;
+    text-overflow:ellipsis;
+}
+
+#detailCon p{
+    width:430px;
+    height:80px;
+    overflow-y: scroll;
+    white-space: pre-wrap;
+}
+
+
+#imgList1 img,#imgList2 img{
+    width:80px;
+}
+
+#replySection .drow4{
+    position: relative;
+    top:190px;
+    left:0px;
+    height: 40px;
+    
+}
+
+#replySection .drow4 div,#replySection .drow4 p{
+	display:inline-block;
+}
+
+#replySection .drow4 p{
+    position: absolute;
+    width:52px;
+    height: 24px;
+    top: 13px;
+    margin-left: 14px;
+}
+
+
+#replySection hr{
+    position:relative;
+    top:185px;
+}
+
+#rpFrm{
+    position: relative;
+    top:200px;
+}
+
+#replySection .reply-wrapper{
+    position: absolute;
+    top:440px;
+    width: 100%;
+    height: 240px;
+    overflow-y: scroll;
+}
+
+
+
+@media screen and (max-width:1200px) {
+    .pin-up,.sec2::before,.sec3,.fixed-width,.sec4,.sec4::before,#headerDiv,.login,#footerDiv,.join,.board,.write,.detail,.gallery,.findId,.findPwd{width:1200px}
+
+}
+
+@media screen and (min-width:1200px) {
+    .pin-up,.sec2::before,.sec3,.fixed-width,.sec4,.sec4::before,#headerDiv,.login,#footerDiv,.join,.board,.write,.detail,.gallery,.findId,.findPwd{width: 100%;}
+}
